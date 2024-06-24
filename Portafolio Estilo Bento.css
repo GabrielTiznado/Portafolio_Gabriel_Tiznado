@@ -1,0 +1,257 @@
+body{
+    background-color: rgb(11 10 16);
+    color: aliceblue;
+    font-family: 'Minecraft', sans-serif;
+    font-weight: lighter;
+}
+
+.Proyectos, .Experiencia, .Tecnologias{
+    animation: Revelar linear both;
+    animation-timeline: view();
+    animation-range: 5% 25%;
+}
+
+@keyframes Revelar{
+    from{
+        opacity: 0;
+        translate: 0 100px;
+        scale: 0.5
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+        scale: 1
+    }
+}
+
+h1{
+    font-size: 26px;
+    margin-top: 275px;
+}
+
+h2{
+    font-size: 24px;
+}
+h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 130px;
+}
+
+h4{
+    text-align: center;
+    font-size: 22px;
+}
+
+h5{
+    text-align: center;
+    font-size: 16px;
+}
+
+p{
+    font-size: 20px;
+}
+
+span{
+    color: blueviolet;
+    font-size: 22px;
+}
+
+/* Inicio del bloque principal */
+
+.Principal{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    gap: 20px;
+}
+
+.Perfil{
+    background-image: url(https://pbs.twimg.com/media/E0MLPfdXsAAjNgf.jpg);
+    background-position: center,center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#GitHub, #Gmail, #cv{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 25px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#GitHub:hover, #Gmail:hover, #cv:hover{
+    scale:1.25;
+}
+
+.Informacion{
+    width: 100%;
+    height: 100%;
+}
+
+.Acerca{
+    background-color: rgb(28 30 35);
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.Nexperiencia-Nproyectos{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.n-Proyectos{
+    background-color: rgb(28 30 35);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.n-Experiencia{
+    background-color: rgb(28 30 35);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Fin del bloque principal */
+/* Inicio del bloque de experiencia */
+
+.mas_informacion{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.Experiencia{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Proteccion{
+    background-image: url(https://gacetinmadrid.com/wp-content/uploads/2019/02/Gato-Lennon.jpg) ;
+    background-position: center;
+    background-size: cover;
+    filter: contrast(125%);
+    border-radius: 20px;
+}
+
+.Freelance{
+    background-image: url(https://www.educalt.com/wp-content/uploads/2023/02/programacion-en-Chile-2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: contrast(125%);
+    border-radius: 20px;
+}
+
+/* Fin del bloque de experiencia */
+/* Inicio del bloque de proyectos */
+
+.Proyectos{
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Club{
+    background-image: url(https://www.cletoreyes.net/wp-content/uploads/2021/05/anthony-joshua.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.calza{
+    background-image: url(https://www.tuexperto.com/wp-content/uploads/2020/01/tienda-ropa-barata-2.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.Nirakmasoterapeuta{
+    background-image: url(https://shadhar.cl/wp-content/uploads/2023/06/10-beneficios-del-masaje.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+/* esto se extiende a todos los proyectos que tenga */
+/* Fin del bloque de proyectos */
+/* Inicio del bloque de tecnologias */
+
+.Tecnologias{
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(28 30 35);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Lista{
+    gap: 20px;
+    opacity: 75%;
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: 2s movimiento infinite linear;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateX(2.5%);
+    }
+    50%{
+        transform: translateX(-2.5%); /*Cuando este aprenda todo poner al -40% */
+    }
+    100%{
+        transform: translateX(2.5%); /*despues bajar a 0%*/
+    }
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    text-align: center;
+    background-color: blueviolet;
+    opacity: 75%;
+}
